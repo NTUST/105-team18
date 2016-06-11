@@ -101,8 +101,14 @@ class AuthController extends Controller
             return $authUser;
         }
 
+        if($githubUser->name == ""){
+            $nameforuser = "Student";
+        }else{
+            $nameforuser = $githubUser->name;
+        }
+
         return User::create([
-            'name' => $githubUser->name,
+            'name' => $nameforuser,
             'email' => $githubUser->email,
             'github_id' => $githubUser->id,
             'avatar' => $githubUser->avatar
