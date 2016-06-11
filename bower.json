@@ -1,0 +1,21 @@
+{
+  "name": "ntust-105T18",
+  "description": "",
+  "main": "",
+  "authors": [
+    "MouseMs <mousems.kuo@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/NTUST/105-team18",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
