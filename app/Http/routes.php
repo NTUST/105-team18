@@ -16,4 +16,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('hi', "hi@a123");
+// Github and basic Authentication Routes
+Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
+Route::get('logout', 'Auth\AuthController@logout');
+
+
+Route::get('/home', 'HomeController@index');

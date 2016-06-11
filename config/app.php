@@ -158,8 +158,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-        GrahamCampbell\GitHub\GitHubServiceProvider::class,
-
+        // GrahamCampbell\GitHub\GitHubServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -208,8 +208,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        'GitHub' => GrahamCampbell\GitHub\Facades::class,
-
+        // 'GitHub' => GrahamCampbell\GitHub\Facades::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 
