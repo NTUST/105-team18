@@ -9,6 +9,11 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    @if(isset($teamdata))
+                        @foreach ($teamdata as $td)
+                            <p>{{$td['teamname']}},{{$td['projectname']}}</p>
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>

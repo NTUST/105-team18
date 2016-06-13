@@ -24,6 +24,27 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view(
+            'home',
+            [
+                "teamdata"=>[
+                    [
+                        "teamname"=>"第一組",
+                        "projectname"=>"專案一"
+
+                    ],
+                    [
+                        "teamname"=>"第二組",
+                        "projectname"=>"專案二"
+
+                    ],
+                    [
+                        "teamname"=>"第三組",
+                        "projectname"=>"專案三"
+
+                    ]
+                ]
+            ]
+        );
     }
 }
