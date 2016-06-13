@@ -6,6 +6,7 @@ use App\User;
 use Auth;
 use Validator;
 use Socialite;
+use Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -87,7 +88,6 @@ class AuthController extends Controller
         } catch (Exception $e) {
             return Redirect::to('auth/github');
         }
-
         $authUser = $this->findOrCreateUser($user);
 
         Auth::login($authUser, true);
@@ -101,14 +101,8 @@ class AuthController extends Controller
             return $authUser;
         }
 
-        if($githubUser->name == ""){
-            $nameforuser = "Student";
-        }else{
-            $nameforuser = $githubUser->name;
-        }
-
         return User::create([
-            'name' => $nameforuser,
+            'name' => $githubUser->user['login'],
             'email' => $githubUser->email,
             'github_id' => $githubUser->id,
             'avatar' => $githubUser->avatar
