@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Models\Teams;
+use App\models\Stumap;
+
 
 class HomeController extends Controller
 {
@@ -14,7 +17,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
     }
 
     /**
@@ -24,27 +26,29 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // return Response()->json(Teams::getAllTeam());
         return view(
             'home',
             [
-                "teamdata"=>[
-                    [
-                        "teamname"=>"第一組",
-                        "projectname"=>"專案一"
-
-                    ],
-                    [
-                        "teamname"=>"第二組",
-                        "projectname"=>"專案二"
-
-                    ],
-                    [
-                        "teamname"=>"第三組",
-                        "projectname"=>"專案三"
-
-                    ]
-                ]
+                'teamdata'=>Teams::getAllTeam()
             ]
         );
+    }
+
+    public function detail($teamno){
+        // return Response()->json([
+        //     'teamdata'=>Teams::where('team_no',$teamno)->get()->first(),
+        //     'memberdata'=>Stumap::where('team_no',$teamno)->get()
+        // ]);
+        return view(
+            'detail',
+            [
+                'teamdata'=>Teams::getTeamDetail($teamno),
+                'memberdata'=>Stumap::where('team_no',$teamno)->get()
+            ]
+        );
+    }
+    public function edit(){
+        $this->middleware('auth');
     }
 }

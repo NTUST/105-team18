@@ -5,14 +5,14 @@
     @if (isset($teamdata))
     <div class="row">
         <div class="col-md-9">
-            <img class="img-rounded img-responsive" src="{{$teamdata[$teamNumber]['thumbnail']}}" alt="test">
+            <img class="img-rounded img-responsive" src="{{$teamdata['project_logo']}}" alt="test">
         </div>
 
         <div class="col-md-3">
-            <h2>{{$teamdata[$teamNumber]['projectname']}}</h2>
-            <h3>{{$teamdata[$teamNumber]['teamname']}}</h3>
+            <h2>{{$teamdata['project_name']}}</h2>
+            <h3>{{$teamdata['team_name']}}</h3>
             <hr>
-            <h4>{{$teamdata[$teamNumber]['info']}}</h4>
+            <h4>{{$teamdata['project_descript']}}</h4>
         </div>
     </div>
     <div class="row">
@@ -21,27 +21,25 @@
         </div>
     </div>
     <div class="row">
-       
-        @foreach($teamdata[$teamNumber]['teammembers'] as $userId)
-            @if (isset($userdata[$userId]))
+
+        @foreach($memberdata as $row)
                 <div class="col-xs-12">
                     <div class="col-xs-3">
-                        <img class="img-rounded img-responsive" src="{{$userdata[$userId]['userImage']}}" alt="test">
+                        <img class="img-rounded img-responsive" src="http://github.com/{{$row['name']}}.png?size=200" alt="test">
                     </div>
                     <div class="col-xs-9">
-                        <h3>{{$userdata[$userId]['username']}}</h3>
-                        <h3>{{$userdata[$userId]['usergit']}}</h3>
+                        <h3>{{$row['stuid']}}</h3>
+                        <h3>{{$row['name']}}</h3>
                     </div>
                 </div>
-        
+
                 <div class="row">
                     <div class="col-xs-12">
                         <hr>
                     </div>
                 </div>
-            @endif
         @endforeach
-        
+
     </div>
     @endif
 </div>
