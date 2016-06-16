@@ -5,14 +5,14 @@
     @if (isset($teamdata))
     <div class="row">
         <div class="col-md-9">
-            <img class="img-rounded img-responsive" src="{{$teamdata['project_logo']}}" alt="test">
+            <img class="img-rounded img-responsive" src="../{{$teamdata['project_logo']}}" alt="test">
         </div>
 
         <div class="col-md-3">
             <h2>{{$teamdata['project_name']}}</h2>
             <h3>{{$teamdata['team_name']}}</h3>
             <hr>
-            <h4>{{$teamdata['project_descript']}}</h4>
+            <h4>{!! $teamdata['project_descript'] !!}</h4>
         </div>
     </div>
     <div class="row">
