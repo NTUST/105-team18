@@ -8,6 +8,8 @@ You can also check out our [introduction slide](https://github.com/NTUST/105-tea
 
 This project is develop with PHP Laravel framework.
 
+Our production site is on [https://jgs.mousems.me](https://jgs.mousems.me).
+
 ## How to install JGS
 
 1. Clone this project to your local directory.
