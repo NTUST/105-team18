@@ -25,7 +25,7 @@
         @foreach($memberdata as $row)
                 <div class="col-xs-12">
                     <div class="col-xs-3">
-                        <img class="img-rounded img-responsive" src="http://github.com/{{$row['name']}}.png?size=200" alt="test">
+                        <img class="img-rounded img-responsive" src="https://github.com/{{$row['name']}}.png?size=200" alt="test">
                     </div>
                     <div class="col-xs-9">
                         <h3>{{$row['stuid']}}</h3>
