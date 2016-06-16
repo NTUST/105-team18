@@ -85,18 +85,10 @@
     </nav>
 
     @yield('content')
-<<<<<<< HEAD
-
-=======
     <div class="panel panel-default">
         <div class="panel-footer" style="text-align: center">
             Jerry's Grading System 2016, BY B10232034/B10232011/B10330002/B10115012 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
         </div>
     </div>
-    <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
->>>>>>> 958c31abc152080af63736ecbca96d40b2806337
 </body>
 </html>
