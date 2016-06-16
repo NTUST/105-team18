@@ -1,27 +1,45 @@
-# Laravel PHP Framework
+# Jerry’s Grading System
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+What we are doing for final project is a nice system for Jerry to have every team’s work graded easily. So we call it a Jerry’s Grading System (JGS).
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+You can also check out our [introduction slide](https://github.com/NTUST/105-team18/raw/master/Project-Introduction-Team-18.pdf).
 
-## Official Documentation
+This project is develop with PHP Laravel framework.
+
+## How to install JGS
+
+1. Clone this project to your local directory.
+2. \>>git clone git@github.com:NTUST/105-team18.git
+3. Install Composer, check out [Composer Docs](https://getcomposer.org/download/)
+4. Install MySQL or XAMPP / LAMP on your machine.
+5. Install npm/bower
+6. \>>cd 105-team18
+7. \>>composer install
+8. \>>composer update
+9. \>>npm update
+10. cp .env.sample as .env
+11. Edit .env file and correct the MySQL information.
+12. \>>php artisan migrate
+13. \>>php artisan db:seed
+14. \>>php artisan serv
+15. JGS Works! See [http://localhost:8000](http://localhost:8000)
+
+## Laravel Official Documentation
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
 ## License
 
+The Jerry's Grading System  is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Author
+
+* Jerry's 網頁設計課 105學年第18組
+* B10232034@NTUST
+* B10232011@NTUST
+* B10330002@NTUST
+* B10115012@NTUST
