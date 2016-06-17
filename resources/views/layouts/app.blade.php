@@ -87,7 +87,7 @@
     @yield('content')
     <div class="panel panel-default">
         <div class="panel-footer" style="text-align: center">
-            Jerry's Grading System 2016, BY B10232034/B10232011/B10330002/B10115012 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+            Jerry's Grading System 2016, BY B10232034/B10232011/B10330002/B10115012 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>, <a href="https://github.com/ntust/105-team18" target="_blank"><img src="../img/GitHub_Logo.png" style="height:20px"></a>.
         </div>
     </div>
 </body>
