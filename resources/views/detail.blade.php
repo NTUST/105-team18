@@ -29,21 +29,16 @@
     <div class="row">
 
         @foreach($memberdata as $row)
-                <div class="col-xs-12">
-                    <div class="col-xs-3">
+                <div class="col-xm-6" style="padding:20px">
+                    <div class="col-xm-3">
                         <img class="img-rounded img-responsive" src="https://github.com/{{$row['name']}}.png?size=150" alt="test">
                     </div>
-                    <div class="col-xs-9">
+                    <div class="col-xs-3">
                         <h3>{{$row['stuid']}}</h3>
                         <h3>{{$row['name']}}</h3>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-12">
-                        <hr>
-                    </div>
-                </div>
         @endforeach
 
     </div>

@@ -25,4 +25,5 @@ Route::get('/home', 'HomeController@index');
 
 
 Route::get('detail/{teamNumber}',  'HomeController@detail');
-Route::get('score/{teamNumber}',  'HomeController@score');
+Route::get('score',  'HomeController@score');
+Route::post('score/{teamNumber}',  'HomeController@storescore');

@@ -10,6 +10,9 @@ use Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
+use Session;
+use App\models\Stumap;
 
 class AuthController extends Controller
 {
@@ -97,6 +100,10 @@ class AuthController extends Controller
 
     private function findOrCreateUser($githubUser)
     {
+
+        $student = Stumap::where('name',$githubUser->user['login'])->get()->first();
+        Session::put('team_no',$student->team_no);
+
         if ($authUser = User::where('github_id', $githubUser->id)->first()) {
             return $authUser;
         }
