@@ -3,7 +3,7 @@
 @section('content')
 <script>
     function errpic(thepic){
-        thepic.src="img/default.svg";  //pic_err.gif is the picture which you want to show onerror
+        thepic.src="{{ url('img/default.svg')}}";  //pic_err.gif is the picture which you want to show onerror
     }
 </script>
 <div class="container">
