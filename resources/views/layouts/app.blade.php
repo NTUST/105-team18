@@ -90,5 +90,15 @@
             Jerry's Grading System 2016, BY B10232034/B10232011/B10330002/B10115012 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>, <a href="https://github.com/ntust/105-team18" target="_blank"><img src="../img/GitHub_Logo.png" style="height:20px"></a>.
         </div>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79514308-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
