@@ -12,7 +12,7 @@ use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
 use Session;
-use App\models\Stumap;
+use App\Models\Stumap;
 
 class AuthController extends Controller
 {

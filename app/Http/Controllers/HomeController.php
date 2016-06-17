@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Models\Teams;
-use App\models\Stumap;
-use App\models\scoreMod;
+use App\Models\Stumap;
+use App\Models\scoreMod;
 use Illuminate\Support\Facades\Input;
 use Session;
 
