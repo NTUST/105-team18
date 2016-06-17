@@ -36,15 +36,27 @@ class HomeController extends Controller
     }
 
     public function detail($teamno){
-        // return Response()->json([
-        //     'teamdata'=>Teams::where('team_no',$teamno)->get()->first(),
-        //     'memberdata'=>Stumap::where('team_no',$teamno)->get()
-        // ]);
         return view(
             'detail',
             [
                 'teamdata'=>Teams::getTeamDetail($teamno),
                 'memberdata'=>Stumap::where('team_no',$teamno)->get()
+            ]
+        );
+    }
+
+
+    public function score($teamno){
+        return view(
+            'score',
+            [
+                'teamdata'=>Teams::getTeamDetail($teamno),
+                'scoreData'=>[
+                    'isScored'=>0,
+                    'score'=>[
+                        0,0,0,0,0
+                    ]
+                ]
             ]
         );
     }
